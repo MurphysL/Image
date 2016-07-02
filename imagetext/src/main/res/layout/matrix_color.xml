@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="match_parent"
+        android:layout_weight="3"
+        android:layout_height="0dp" />
+
+    <GridLayout
+        android:id="@+id/mgridLayout"
+        android:layout_marginTop="5dp"
+        android:layout_weight="3"
+        android:rowCount="4"
+        android:columnCount="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></GridLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="btn_Change"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="Change"
+            android:layout_height="50dp" />
+
+        <Button
+            android:onClick="btn_Reset"
+            android:text="Reset"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+</LinearLayout>

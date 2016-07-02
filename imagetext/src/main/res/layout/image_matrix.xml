@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.lenovo.imagetext.ImageMatrixView
+        android:id="@+id/imageMatrixView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        ></com.example.lenovo.imagetext.ImageMatrixView>
+
+    <GridLayout
+        android:id="@+id/mgridLayout2"
+        android:layout_width="match_parent"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_weight="6"
+        android:layout_height="0dp"></GridLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/change"
+            android:text="Change"
+            android:onClick="btn_Change2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/reset"
+            android:text="Reset"
+            android:onClick="btn_Reset2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>
